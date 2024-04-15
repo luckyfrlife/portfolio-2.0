@@ -1,0 +1,96 @@
+.contact {
+  background-image: var(--second-gradient);
+}
+
+.contact__container {
+  grid-template-columns: 5fr 7fr;
+  /* height: 75vh; */
+  position: relative;
+  z-index: 10;
+}
+
+.contact__card {
+  padding-left: 130px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.contact__card-icon,
+.contact__form-input {
+  border: 2px solid var(--border-color);
+  background-color: var(--container-color);
+}
+
+.contact__card-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  font-size: var(--larger-font-size);
+  display: grid;
+  place-items: center;
+}
+
+.contact__card-icon::after {
+  content: "";
+  width: 40px;
+  height: 2px;
+  background-color: var(--border-color);
+  position: absolute;
+  left: 100%;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.contact__card-title {
+  font-size: var(--h2-font-size);
+  font-family: var(--second-font);
+  padding-block: 6px;
+}
+
+.contact__form-group {
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 30px;
+}
+
+.contact__form-div {
+  display: grid;
+  row-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.contact__form-tag {
+  margin-left: 30px;
+  font-size: var(--smaller-font-size);
+  font-weight: 700;
+}
+
+.contact__form-tag b {
+  color: var(--primary-color);
+}
+
+.contact__form-input {
+  color: var(--title-color);
+  height: 60px;
+  border-radius: 30px;
+  padding-inline: 30px;
+}
+
+.contact__form-area .contact__form-input {
+  height: 140px;
+  padding-block: 20px;
+  resize: none;
+}
+
+.contact__submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 15px;
+}

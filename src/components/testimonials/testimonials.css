@@ -1,0 +1,39 @@
+.testimonials {
+  background-image: var(--third-gradient);
+}
+
+.testimonials__container {
+  text-align: center;
+}
+
+.testimonial__header {
+  position: relative;
+}
+
+.testimonial__img {
+  height: 180px;
+  width: 100%;
+  border-radius: 18px;
+  object-fit: cover;
+  margin-bottom: 30px;
+  vertical-align: middle;
+}
+
+.testimonial__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background: var(--container-color);
+  border-bottom-right-radius: 18px;
+}
+
+.testimonial__description {
+  min-height: 110px;
+}
+
+.testimonial__name {
+  font-size: var(--largest-font);
+  margin-top: 30px;
+}

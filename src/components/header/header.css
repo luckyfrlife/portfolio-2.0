@@ -1,0 +1,156 @@
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  padding: 30px;
+  z-index: 100;
+}
+
+.scroll-header {
+  position: fixed;
+  background-color: var(--bg-color-alt);
+  animation: header_animate 0.8s var(--transition) 0s forwards;
+}
+
+@keyframes head_animate {
+  0% {
+    transform: translateY(-100px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  color: var(--title-color);
+  font-size: var(--h4-font-size);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav__menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  display: flex;
+  background-color: var(--bg-color-alt);
+  transition: all 1s var(--transition);
+  overflow: hidden;
+  z-index: 10;
+}
+
+.show-menu {
+  width: 512px;
+}
+
+.nav__data {
+  padding: 80px 84px 0 154px;
+  margin: auto;
+  width: 100%;
+}
+
+.nav__list {
+  margin-bottom: 40px;
+}
+
+.nav__list li {
+  margin-bottom: 20px;
+}
+
+.nav__link {
+  color: var(--title-color);
+  font-size: var(--h5-font-size);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s var(--transition);
+}
+
+.active,
+.nav__link:hover {
+  color: var(--primary-color);
+}
+
+.header__socials {
+  display: flex;
+  column-gap: 20px;
+  margin-bottom: 30px;
+}
+
+.header__social-link {
+  color: var(--title-color);
+  font-size: var(--h5-font-size);
+  transition: all 0.7s var(--transition);
+}
+
+.header__social-link:hover {
+  color: var(--primary-color);
+}
+
+.nav__btns {
+  display: flex;
+  align-items: center;
+  column-gap: 40px;
+}
+
+.theme__toggle {
+  font-size: var(--h4-font-size);
+  display: flex;
+  align-items: center;
+}
+
+.nav__toggle {
+  height: 30px;
+  width: 28px;
+  position: relative;
+  z-index: 100;
+}
+
+.theme__toggle,
+.nav__toggle {
+  cursor: pointer;
+}
+
+.nav__toggle span {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--title-color);
+  transition: all 0.3s var(--transition);
+}
+
+.nav__toggle span:first-child {
+  top: 8px;
+}
+
+.nav__toggle span:last-child {
+  bottom: 8px;
+}
+
+.animate-toggle span:first-child {
+  transform: rotate(-45deg);
+  top: 14px;
+}
+
+.animate-toggle span:last-child {
+  transform: rotate(45deg);
+  bottom: 14px;
+}
+
+.header__deco {
+  left: 75px;
+}
+
+.header__deco .shape {
+  top: -200px;
+  left: -168px;
+  z-index: -1;
+}
